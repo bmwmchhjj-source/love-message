@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#b86ad6">
+<meta name="description" content="Someone has a special message for you ❤️">
+<meta property="og:title" content="Someone has a special message for you ❤️">
+<meta property="og:description" content="Open your letter 💌">
+<meta property="og:type" content="website">
+<title>A Letter For You ❤️</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+<button id="music" aria-label="Toggle music" title="Music">🔇</button>
+
+<section id="intro" class="screen">
+  <h1>Someone has a special message for you ❤️</h1>
+  <div class="env-wrap" id="envWrap">
+    <div class="envelope" id="envelope">
+      <div class="env-back"></div>
+      <div class="paper">💌</div>
+      <div class="env-front"></div>
+      <div class="flap"></div>
+      <div class="seal">❤</div>
+    </div>
+  </div>
+  <button class="btn" id="openBtn">Open Your Letter 💌</button>
+</section>
+
+<section id="letterScreen" class="screen hide">
+  <div class="letter" id="letter">
+    <div id="text"></div>
+    <div class="rose" id="rose">
+      <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 70 C48 100 54 125 50 148" stroke="#3f9b5a" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M51 112 C70 100 84 106 88 118 C72 124 58 122 51 112Z" fill="#4fb36c"/>
+        <path d="M49 126 C32 114 18 120 14 132 C30 138 44 136 49 126Z" fill="#43a561"/>
+        <g class="bloom">
+          <circle cx="50" cy="42" r="30" fill="#c2185b"/>
+          <path d="M26 40 C28 18 72 18 74 40 C70 60 30 60 26 40Z" fill="#e0306f"/>
+          <path d="M34 40 C36 26 64 26 66 40 C62 54 38 54 34 40Z" fill="#f0508a"/>
+          <path d="M42 40 C43 32 58 32 58 40 C56 47 44 47 42 40Z" fill="#c2185b"/>
+          <path d="M46 40 C47 36 53 36 54 40" stroke="#8e0f3f" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <button class="btn" id="next">Continue ❤️</button>
+</section>
+
+<section id="final" class="screen hide">
+  <div class="bigheart">❤️</div>
+  <h2>Made with Love ❤️</h2>
+  <button class="btn ghost" id="replay">Read it again 💌</button>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
